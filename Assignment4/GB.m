@@ -1,12 +1,8 @@
 function [Board,NumericBoard]=GB(Board,NumericBoard,move,player)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% updates the tic tac toe gameboards (numeric and visual boards)
+% updates the gameboards (numeric and visual boards) for tic tac toe
 % Name: Victoria Price
 % Date: 9/26/16
-% Details: both visual board (Board) and number board (NumbericBoard) are
-% updated using their move and player number (1= computer='X', 2=
-% player='O'). Input variables: Board, NumericBoard, move, player. Output
-% variables: updated Board and NumericBoard.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 a=[1:3;4:6;7:9];        %reference for where numbers are on the matrix

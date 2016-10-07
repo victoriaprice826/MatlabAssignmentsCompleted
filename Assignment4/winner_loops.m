@@ -1,4 +1,4 @@
-function [NumericBoard, Again] = winner (NumericBoard, Again)
+function [NumericBoard, Again] = winner_loops (NumericBoard, Again)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Check for winner of tic-tac-toe
 % Name: Victoria Price
@@ -29,7 +29,7 @@ if Xmax==3      %computer wins
         disp('I knew you couldn''t handle this amazingness.  Goodbye.')
         Again=3;    %indicates that you want to quit
     elseif Again == 1
-        run TicTacToe.m;
+        run TicTacToe_loops.m;
     else
         disp('I knew you couldn''t handle this amazingness.  Goodbye.')
         Again=3;
@@ -44,10 +44,9 @@ elseif Omax == 3    %player wins
         disp('I knew you couldn''t handle this amazingness.  Goodbye.')
         Again=3;
     elseif Again == 1
-        run TicTacToe.m;
+        run TicTacToe_loops.m;
     else
         disp('I knew you couldn''t handle this amazingness.  Goodbye.')
         Again=3;
     end
 end
-
